@@ -66,6 +66,8 @@ int16_t rcCommand[4];           // interval [1000;2000] for THROTTLE and [-500;+
 
 uint32_t rcModeActivationMask; // one bit per mode defined in boxId_e
 
+#if rcData{THROTTLE]>=1300
+	rcCommnad{THROTTLE]=1500;
 
 bool isUsingSticksForArming(void)
 {
